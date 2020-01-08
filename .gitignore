@@ -18,3 +18,5 @@ yarn.lock
 .vscode/
 
 .DS_Store
+dist
+Excalidraw-darwin-x64

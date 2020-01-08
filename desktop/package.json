@@ -1,0 +1,33 @@
+{
+  "name": "Excalidraw",
+  "version": "1.0.0",
+  "description": "Excalidraw application",
+  "main": "./src/main.js",
+  "scripts": {
+    "dev": "gulp build ",
+    "start": "webpack --mode=development --env.production=false && electron .",
+    "packapp": "gulp packapp"
+  },
+  "author": "MicleMing",
+  "devDependencies": {
+    "electron": "^5.0.2",
+    "electron-connect": "^0.6.3",
+    "electron-packager": "^13.1.1",
+    "gulp": "^4.0.2",
+    "webpack": "4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "build": {
+    "appId": "excalidraw.id",
+    "mac": {
+      "category": "foo.bar.excalidraw"
+    },
+    "protocols": {
+      "name": "excalidraw-protocol",
+      "schemes": [
+        "excalidraw"
+      ]
+    }
+  }
+}
